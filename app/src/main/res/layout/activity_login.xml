@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.login.LoginActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Faça seu login"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:paddingBottom="50dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="E-mail"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtLoginEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            tools:text="example@example.com"
+            android:textSize="14sp"
+            android:inputType="TODO" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Senha"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtLoginPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            tools:text="******"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnEnterLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Entrar"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
