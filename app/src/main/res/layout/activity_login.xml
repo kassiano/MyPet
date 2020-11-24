@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Faça seu login"
+            android:text="Faça seu login"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_gravity="center"
@@ -41,7 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Senha"
+            android:text="Senha"
             android:textSize="16sp"/>
 
         <EditText
@@ -55,10 +55,17 @@
             android:id="@+id/btnEnterLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Entrar"
+            android:text="Entrar"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             />
+
+        <TextView
+            android:id="@+id/btnRegisterUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
