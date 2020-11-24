@@ -32,12 +32,11 @@
             android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/edtLoginEmail"
+            android:id="@+id/editTextLoginEmail"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             tools:text="example@example.com"
-            android:textSize="14sp"
-            android:inputType="TODO" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,7 +45,7 @@
             android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/edtLoginPassword"
+            android:id="@+id/editTextLoginPassword"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             tools:text="******"
