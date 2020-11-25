@@ -15,18 +15,29 @@
         android:layout_marginTop="100dp">
 
         <TextView
+            android:id="@+id/titleRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Preencha os campos"
+            android:text="Preencha os campos"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_gravity="center"
-            android:paddingBottom="50dp"/>
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/titleOkay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foi salvo"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Nome"
+            android:text="Nome"
             android:textSize="16sp"/>
 
         <EditText
@@ -39,7 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Celular"
+            android:text="Celular"
             android:textSize="16sp"/>
 
         <EditText
@@ -52,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="E-mail"
+            android:text="E-mail"
             android:textSize="16sp"/>
 
         <EditText
@@ -65,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Senha"
+            android:text="Senha"
             android:textSize="16sp"/>
 
         <EditText
@@ -79,7 +90,7 @@
             android:id="@+id/buttonRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Cadastrar"
+            android:text="Cadastrar"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             />
