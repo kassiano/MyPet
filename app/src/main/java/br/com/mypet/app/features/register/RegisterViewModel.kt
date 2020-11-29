@@ -11,19 +11,18 @@ import kotlinx.coroutines.launch
 
 class RegisterViewModel(private val db: AppDataBase) : ViewModel() {
 
-    val viewstate = MutableLiveData<ViewState>()
+    val liveData = MutableLiveData<Result<Boolean>>()
 
     fun createUser(name: String, cellphone: String, email: String, password: String ){
 
         val user = User(name = name, cellphone = cellphone, email = email, password = password);
 
-        viewModelScope.launch(Dispatchers.IO){
+        viewModelScope.launch(Dispatchers.IO) {
             try {
-                viewstate.postValue(ViewState.Loading())
                 db.appDao().createUser(user)
-                viewstate.postValue(ViewState.Success("Cadastro feito com sucesso"))
+                liveData.postValue(Result.success(true))
             } catch (t: Throwable){
-                viewstate.postValue(ViewState.Error(t.message?:"Erro ao criar o usuário"))
+                liveData.postValue(Result.failure(t))
             }
         }
 
