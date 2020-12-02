@@ -3,14 +3,15 @@
     package="br.com.mypet.app">
 
     <application
+        android:name=".MyPetApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyPet"
-        android:name=".MyPetApp">
-        <activity android:name=".features.register.RegisterActivity"></activity>
+        android:theme="@style/Theme.MyPet">
+        <activity android:name=".features.home.HomeActivity"></activity>
+        <activity android:name=".features.register.RegisterActivity" />
         <activity
             android:name=".features.login.LoginActivity"
             android:label="@string/title_activity_login">
@@ -20,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
