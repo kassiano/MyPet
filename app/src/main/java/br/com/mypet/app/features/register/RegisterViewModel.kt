@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import br.com.mypet.app.core.data.AppDataBase
 import br.com.mypet.app.core.model.User
-import br.com.mypet.app.core.viewstate.ViewState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

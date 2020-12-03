@@ -10,10 +10,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class LoginViewModel (
-    private val context: Context,
     private val db: AppDataBase
 ) : ViewModel(){
-
 
     val liveData = MutableLiveData<Result<Boolean>>()
 

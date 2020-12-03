@@ -9,7 +9,6 @@ import br.com.mypet.app.R
 import br.com.mypet.app.features.home.HomeActivity
 import br.com.mypet.app.features.register.RegisterActivity
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_register.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
 
@@ -23,11 +22,6 @@ class LoginActivity : AppCompatActivity() {
 
         btnRegisterUser.setOnClickListener { buttonRegister() }
 
-    }
-
-    override fun onResume() {
-        super.onResume()
-
         viewModel.liveData.observe(this, Observer {
             if(it.isSuccess){
                 onSuccess()
@@ -38,13 +32,13 @@ class LoginActivity : AppCompatActivity() {
 
         setupButtonLogin()
 
-
     }
+
 
     fun setupButtonLogin(){
         btnEnterLogin.setOnClickListener {
-            val email = editTextLoginEmail.toString()
-            val password = editTextPassword.toString()
+            val email = editTextLoginEmail.text.toString()
+            val password = editTextLoginPassword.text.toString()
 
             if(email.isEmpty()){
                 editTextLoginEmail.error = "Preencha"

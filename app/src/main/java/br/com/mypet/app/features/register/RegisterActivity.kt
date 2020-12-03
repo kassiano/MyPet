@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
 import br.com.mypet.app.R
-import br.com.mypet.app.core.viewstate.ViewState
 import kotlinx.android.synthetic.main.activity_register.*
 import org.koin.android.viewmodel.ext.android.viewModel
 

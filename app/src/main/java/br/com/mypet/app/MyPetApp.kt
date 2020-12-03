@@ -20,7 +20,7 @@ class MyPetApp: Application() {
         }
 
         viewModel { RegisterViewModel(get()) }
-        viewModel { LoginViewModel(get(), get()) }
+        viewModel { LoginViewModel(get()) }
 
     }
 
