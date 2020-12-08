@@ -12,13 +12,11 @@ class RegisterViewModel(private val db: AppDataBase) : ViewModel() {
 
     val liveData = MutableLiveData<Result<Boolean>>()
 
-    fun createUser(name: String, cellphone: String, email: String, password: String ){
-
-        val user = User(name = name, cellphone = cellphone, email = email, password = password);
+    fun createUser(user: User){
 
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                db.appDao().createUser(user)
+                db.userDao().createUser(user)
                 liveData.postValue(Result.success(true))
             } catch (t: Throwable){
                 liveData.postValue(Result.failure(t))

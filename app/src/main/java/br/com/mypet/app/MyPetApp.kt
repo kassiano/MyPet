@@ -6,6 +6,7 @@ import androidx.room.Room
 import br.com.mypet.app.core.data.AppDataBase
 import br.com.mypet.app.features.login.LoginViewModel
 import br.com.mypet.app.features.register.RegisterViewModel
+import br.com.mypet.app.features.registerPet.RegisterPetViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.core.context.startKoin
@@ -21,6 +22,7 @@ class MyPetApp: Application() {
 
         viewModel { RegisterViewModel(get()) }
         viewModel { LoginViewModel(get()) }
+        viewModel { RegisterPetViewModel(get()) }
 
     }
 

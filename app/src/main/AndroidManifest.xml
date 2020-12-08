@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPet">
-        <activity android:name=".features.home.HomeActivity"></activity>
+        <activity android:name=".features.registerPet.RegisterPetActivity"></activity>
+        <activity android:name=".features.home.HomeActivity" />
         <activity android:name=".features.register.RegisterActivity" />
         <activity
             android:name=".features.login.LoginActivity"
