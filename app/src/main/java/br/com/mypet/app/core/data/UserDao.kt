@@ -8,7 +8,7 @@ import br.com.mypet.app.core.model.User
 @Dao
 interface UserDao {
 
-    @Query("SELECT id FROM user where email = :email")
+    @Query("SELECT * FROM user where email = :email")
     fun getUserFromEmail(email: String?): List<User>
 
     @Query("SELECT * FROM user where email = :email and password = :password")

@@ -87,7 +87,7 @@ class LoginActivity : AppCompatActivity() {
 
         val currentEmailUser = viewModel.getUserFromEmail(email)
 
-        preferences.setString(Preferences.CURRENT_USER, currentEmailUser)
+        preferences.setString(Preferences.CURRENT_USER, currentEmailUser.toString())
 
     }
 }
