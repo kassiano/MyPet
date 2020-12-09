@@ -7,8 +7,9 @@
     tools:context=".features.home.HomeActivity">
 
     <TextView
+        android:id="@+id/titleHomeUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Criar pet"/>
+        tools:text="Ola"/>
 
 </LinearLayout>
