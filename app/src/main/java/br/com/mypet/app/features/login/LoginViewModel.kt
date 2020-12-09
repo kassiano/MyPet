@@ -27,6 +27,18 @@ class LoginViewModel (
     }
 
 
+    fun getUserFromEmail(email: String){
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                db.userDao().getUserFromEmail(email)
+                liveData.postValue(Result.success(true))
+            } catch (t: Throwable){
+                liveData.postValue(Result.failure(t))
+            }
+        }
+    }
+
+
 
 
 
